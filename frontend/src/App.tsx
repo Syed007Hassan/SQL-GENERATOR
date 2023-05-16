@@ -9,8 +9,9 @@ function App() {
   return (
     <>
       <div className="app">
-        <MessageDisplay />
+        <MessagesDisplay />
         <input />
+        <CodeDisplay />
         <div className="button-container">
           <button id="get">Get Query</button>
           <button id="clear">Clear</button>
