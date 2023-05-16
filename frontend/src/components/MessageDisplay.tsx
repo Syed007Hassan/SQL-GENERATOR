@@ -1,9 +1,9 @@
 const MessageDisplay = () => {
   return (
     <div className="message-display">
-      <p>x</p>
-      <p>User</p>
-      <p>Message</p>
+      <p id="icon">x</p>
+      <p id="icon">User</p>
+      <p id="icon">Message</p>
     </div>
   );
 };

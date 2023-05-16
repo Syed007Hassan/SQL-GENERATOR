@@ -28,6 +28,9 @@ input {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .button-container {
@@ -41,7 +44,7 @@ input {
   width: 96%;
   margin: 2%;
   height: 46%;
-  border-radius: 8px;
+  border-radius: 5px;
   background-color: rgb(34, 34, 34);
   overflow: hidden;
 }
@@ -86,8 +89,11 @@ input {
   margin-top: 10px;
   padding: 2px;
   border-radius: 2px;
-  -webkit-appearance: none;
   width: 7px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -103,4 +109,17 @@ input {
   box-sizing: border-box;
   background-color: rgb(250, 250, 250);
   margin: 5px 0;
+}
+
+p#icon {
+  padding: 0 7px;
+  font-size: 1.5rem;
+}
+
+input {
+  border: solid rgba(0, 0, 0, 0.4) 2px;
+  margin: 2px 15px 0 15px;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
