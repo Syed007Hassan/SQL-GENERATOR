@@ -14,8 +14,8 @@ function App() {
         <CodeDisplay />
         <div className="button-container">
           <button id="get">Get Query</button>
-          <button id="clear">Clear</button>
           <button id="copy">Copy Query</button>
+          <button id="clear">Clear</button>
         </div>
       </div>
     </>

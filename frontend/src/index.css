@@ -24,7 +24,7 @@ input {
 
 .app {
   height: 80vh;
-  width: 80vw;
+  width: 60vw;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -118,8 +118,60 @@ p#icon {
 
 input {
   border: solid rgba(0, 0, 0, 0.4) 2px;
-  margin: 2px 15px 0 15px;
+  /* make the above margin in rem   margin: 2px 21px 0 21px; */
+  margin: 2%;
   padding: 16px;
   box-sizing: border-box;
   border-radius: 5px;
+}
+
+.button-container {
+  margin: 2%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-container button {
+  text-transform: uppercase;
+  padding: 7px;
+  border: none;
+  /* outline button with some style */
+  cursor: pointer;
+}
+
+button#get {
+  background-color: rgb(255, 95, 86);
+
+  border-radius: 10px 0 0 10px;
+}
+
+button#clear {
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(39, 201, 63);
+}
+
+button#copy {
+  border-radius: 0 0 0 0;
+  background-color: rgb(255, 189, 46);
+}
+
+button#clear:hover {
+  background-color: rgb(34, 173, 54);
+  /* do some outline */
+  outline: 1px solid rgb(34, 173, 54);
+}
+
+button#get:hover {
+  background-color: rgb(255, 80, 71);
+  /* do some outline */
+  outline: 1px solid rgb(255, 80, 71);
+}
+
+button#copy:hover {
+  background-color: rgb(255, 179, 0);
+  /* do some outline */
+  outline: 1px solid rgb(255, 179, 0);
 }
