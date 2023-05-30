@@ -23,7 +23,7 @@ function App() {
         "http://localhost:5000/api/sql/completions",
         { message }
       );
-      console.log(response.data.message);
+      // console.log(response.data.message);
 
       const userMessage = {
         content: value,
@@ -39,22 +39,49 @@ function App() {
 
   console.log(chat);
 
+  //filter teh messages to only show the user messages
   const filteredUserMessages = chat.filter(
     (message) => message.role === "user"
   );
+
+  const latestCode = chat
+    .filter((message) => message.role === "assistant")
+    .pop();
+
+  const clearChat = () => {
+    setValue("");
+  };
+
+  const copyValue = () => {
+    navigator.clipboard.writeText(value);
+
+    //create popup to show that the text has been copied to the button id copy
+
+    const popup = document.getElementById("copy") as HTMLButtonElement;
+    popup.innerHTML = "Copied";
+    setTimeout(() => {
+      popup.innerHTML = "Copy Query";
+    }, 1500);
+  };
+
+  console.log(value);
 
   return (
     <>
       <div className="app">
         <MessagesDisplay userMessages={filteredUserMessages} />
         <input value={value} onChange={(e) => setValue(e.target.value)} />
-        <CodeDisplay />
+        <CodeDisplay text={latestCode?.content || ""} />
         <div className="button-container">
           <button id="get" onClick={getQuery}>
             Get Query
           </button>
-          <button id="copy">Copy Query</button>
-          <button id="clear">Clear</button>
+          <button id="copy" onClick={copyValue}>
+            Copy Query
+          </button>
+          <button id="clear" onClick={clearChat}>
+            Clear
+          </button>
         </div>
       </div>
     </>

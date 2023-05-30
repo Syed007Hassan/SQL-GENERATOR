@@ -1,4 +1,8 @@
-const CodeDisplay = () => {
+interface CodeDisplayProps {
+  text: string;
+}
+
+const CodeDisplay = ({ text }: CodeDisplayProps) => {
   return (
     <>
       <div className="code-display">
@@ -8,7 +12,7 @@ const CodeDisplay = () => {
           <div className="button last"></div>
         </div>
         <div className="code-output">
-          <p></p>
+          <p> {text}</p>
         </div>
       </div>
     </>
