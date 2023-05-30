@@ -2,5 +2,7 @@
 
 ## DEMO
 
-https://github.com/Syed007Hassan/SQL-GENERATOR/assets/104893311/82631bd6-37e2-4b65-b760-c7791748f1c0
+https://github.com/Syed007Hassan/SQL-GENERATOR/assets/104893311/6faf4005-b176-42ac-9f26-ecd4def9ad5c
+
+
 
