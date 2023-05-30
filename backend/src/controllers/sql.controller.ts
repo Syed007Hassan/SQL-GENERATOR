@@ -11,12 +11,13 @@ const openapi = new OpenAIApi(configuration);
 
 const getCompletions = async (req: Request, res: Response) => {
   try {
+    console.log(req.body.message);
     const completion = await openapi.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [
         {
           role: "user",
-          content: "Give SQL statement for: " + req.body.message,
+          content: "Give a SQL statement query for: " + req.body.message + "\n",
         },
       ],
     });
