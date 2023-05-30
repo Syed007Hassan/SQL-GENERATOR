@@ -1,0 +1,6 @@
+# SQL-GENERATOR
+
+## DEMO
+
+https://github.com/Syed007Hassan/SQL-GENERATOR/assets/104893311/82631bd6-37e2-4b65-b760-c7791748f1c0
+
