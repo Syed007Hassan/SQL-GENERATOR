@@ -39,7 +39,8 @@ app.use("/api/sql", sqlRouter);
 // app.use("/api/users", userRouter);
 
 const startServer = async () => {
-  await connectDb();
+  // await connectDb();
+  const port: number = 5000;
   app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
   });
