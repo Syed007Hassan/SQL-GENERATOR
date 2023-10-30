@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc -p .",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node build/index.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,7 +24,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.1",
     "morgan": "^1.10.0",
-    "openai": "^3.2.1",
+    "openai": "^4.14.1",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"

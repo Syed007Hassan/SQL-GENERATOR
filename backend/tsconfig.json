@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "target": "es2017",
+    "module": "ES2022",
     "moduleResolution": "node",
-    "baseUrl": "src",
-    "outDir": "dist",
-    "sourceMap": true,
-    "noImplicitAny": true
-    // "allowImportingTsExtensions": true,
-    // "noEmit": false,
-    // "emitDeclarationOnly": false
+    "outDir": "dist/",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./build"
   },
   "include": ["src/**/*"]
 }

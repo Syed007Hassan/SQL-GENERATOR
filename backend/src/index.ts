@@ -11,7 +11,8 @@ import morgan from "morgan";
 import { connectDb, mongooseDisconnect } from "./db/mongo";
 import authRouter from "./routes/auth.routes";
 import userRouter from "./routes/user.routes";
-import sqlRouter from "./routes/sql.routes";
+// import sqlRouter from "./routes/sql.routes";
+import testRouter from "./routes/test.routes";
 
 dotenv.config();
 
@@ -34,12 +35,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //all routes
-app.use("/api/sql", sqlRouter);
+
+app.use("/api", testRouter);
+// app.use("/api/sql", sqlRouter);
 // app.use("/api/auth", authRouter);
 // app.use("/api/users", userRouter);
 
 const startServer = async () => {
-  await connectDb();
   app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
   });

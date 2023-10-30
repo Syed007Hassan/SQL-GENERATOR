@@ -1,8 +1,8 @@
-import { Router } from "express";
-import { getCompletions } from "../controllers/sql.controller";
+// import { Router } from "express";
+// import { getCompletions } from "../controllers/sql.controller";
 
-const sqlRouter = Router();
+// const sqlRouter = Router();
 
-sqlRouter.post("/completions", getCompletions);
+// sqlRouter.post("/completions", getCompletions);
 
-export default sqlRouter;
+// export default sqlRouter;
